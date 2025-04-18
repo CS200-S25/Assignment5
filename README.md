@@ -14,7 +14,7 @@ The definition of a frequency is as follows: The frequency of a particular data 
 
 1.B. Add an instance method to print the contents of the frequency table. The method header is: public void printFrequencies(int[] nums). You can decide how to print this data, there is no required format for this output.
 
-1. C. Make sure to test your methods by running this main() in the Frequencies class. 
+1.C. Make sure to test your methods by running this main() in the Frequencies class. 
 
 ```
 public static void main(String[] args){
@@ -46,15 +46,9 @@ You can use the character sequence `\t` to add the spacing after each value so t
 
 1.E.  Update your main method by adding 3 new integer arrays of different sizes and different values to test your program, make sure to pick useful test cases that consider edge cases and print the histogram for each of these arrays.
 
+## Part 2: Continuing your text-based adventure game
 
 ![alt text](https://github.com/CS200-S25/Assignment-4/blob/main/GUI.jpg?raw=true)
-
-1. Recreate this GUI using controls from JavaFX in a way that closely matches this image visually, you will get full credit if you use a control that closely resembles the element in the image even if it is not the same one.
-2. Sketch a scene graph on paper of your resulting GUI (see section 6.1.2 for an example scene graph https://math.hws.edu/javanotes/c6/s1.html)
-
-As a resource, it would be helpful to browse through a list of JavaFX controls: https://docs.oracle.com/javafx/2/ui_controls/jfxpub-ui_controls.htm and a list of JavaFX layouts: https://docs.oracle.com/javafx/2/layout/builtin_layouts.htm.
-
-## Part 2: Continuing your text-based adventure game
 Complete your text-based adventure game by updating two aspects: 1) incorporating your hierarchy of classes representing the items that are available in your game into the rest of your game, 2) updating the health points for a player based on damage occured from animals in rooms. 
 
 For 1) your Game class must be updated with the following addition to `parseCommand()` which will require you to create a new method for `drop()` and `eat()`. If a user drops an item from their inventory (by typing the string corresponding to the item) then the item is added to the treasure chest of the current room. If a user eats a food item, then their health should increase.
