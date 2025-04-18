@@ -47,7 +47,7 @@ You can use the character sequence `\t` to add the spacing after each value so t
 1.E.  Update your main method by adding 3 new integer arrays of different sizes and different values to test your program, make sure to pick useful test cases that consider edge cases and print the histogram for each of these arrays.
 
 ## Part 2: Practice with Polymorphism
-In this exercise, you will write a program to manage a zoo of animals and check whether they are comfortable at the current daily temperature. For this exercise, you are given [the document for the program available here]([https://pages.github.com/](https://cs.wellesley.edu/~cs200/AnimalDoc/package-summary.html)). There are 7 classes that you will need to implement following the specifications in the documentation.
+In this exercise, you will write a program to manage a zoo of animals and check whether they are comfortable at the current daily temperature. For this exercise, you are given [the document for the program available here](https://cs.wellesley.edu/~cs200/AnimalDoc/package-summary.html). There are 7 classes that you will need to implement following the specifications in the documentation.
 
 The requirements for this exercise are:
 - Your classes must match the exact names and headers provided in the documentation.
