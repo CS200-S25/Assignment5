@@ -46,53 +46,25 @@ You can use the character sequence `\t` to add the spacing after each value so t
 
 1.E.  Update your main method by adding 3 new integer arrays of different sizes and different values to test your program, make sure to pick useful test cases that consider edge cases and print the histogram for each of these arrays.
 
-## Part 2: Continuing your text-based adventure game
+## Part 2: Practice with Polymorphism
+In this exercise, you will write a program to manage a zoo of animals and check whether they are comfortable at the current daily temperature. For this exercise, you are given [the document for the program available here]([https://pages.github.com/](https://cs.wellesley.edu/~cs200/AnimalDoc/package-summary.html)). There are 7 classes that you will need to implement following the specifications in the documentation.
 
-![alt text](https://github.com/CS200-S25/Assignment-4/blob/main/GUI.jpg?raw=true)
-Complete your text-based adventure game by updating two aspects: 1) incorporating your hierarchy of classes representing the items that are available in your game into the rest of your game, 2) updating the health points for a player based on damage occured from animals in rooms. 
+The requirements for this exercise are:
+- Your classes must match the exact names and headers provided in the documentation.
+- You can add getters, setters, and toString() that are not provided in the documentation if needed. This is not necessary to successfully complete this exercise but you can do this if it is helpful for you.
+- You must add a main() in the Zoo class to test your program. The testing must thoroughly test your program and you must submit this main() with your Zoo file submission.
 
-For 1) your Game class must be updated with the following addition to `parseCommand()` which will require you to create a new method for `drop()` and `eat()`. If a user drops an item from their inventory (by typing the string corresponding to the item) then the item is added to the treasure chest of the current room. If a user eats a food item, then their health should increase.
+## Part 3: Complete the text-based adventure game
+Make sure to test the functionality of your game so that a player can play your game. First, complete these two tasks:
+1) Fix any remaining parts of your program to make your game playable through the text-based input.
+2) Update any text displayed to the user to make the status of the game more clear and provide helpful feedback.
 
-```
-public void parseCommand(String input) {
-        
-        String[] wordList = input.split("[\s]");
-        String verb;
-        String noun;
-        
-        if(wordList.length < 2 || wordList.length > 2) {
-            System.out.println("Only 2 word commands allowed!");
-        } else {
-            verb = wordList[0];
-            noun = wordList[1];
-            switch (verb) {
-                case "take":
-                    take(noun); 
-                    break;
-                case "drop":
-                    drop(noun); // THIS IS A NEW ADDITION
-                    break;
-                case "eat":
-                    eat(noun); // THIS IS A NEW ADDITION
-                    break;
-                case "go":
-                    movePlayer(noun);
-                    break;
-                default:
-                    System.out.println(verb + " is not a known verb!");
-            }
-        }
-    }
-```
-
-For 2) you must also update your game to reduce a player's health by the damage of the animal when the player enters a room with that animal.
+Then, finalize your game by conducting one full run-through of your game. Copy the output, which should include your user input and the program's output, and paste that into a new document. You will submit a pdf of this document along with your code.
 
 ## COLLABORATION
 This assignment is an individual assignment. You can discuss this assignment with your peers, TA and instructor. You cannot show code to your peers, you each write your own solutions. You can show code to the TAs and instructor. Additionally, you cannot use generative AI or online resources that are not linked from our course website to complete this assignment.  
 
 ## SUBMISSION
-Submit the following files to Gradescope for Assignment 1:
-* take a picture of your solutions to Part 1 and upload a .png or .jpeg file to Gradescope
-* upload your code for the recipe management GUI and all of the files for your game to Gradescope
+Submit the following files to Gradescope for this assignment: Frequencies.java, the 7 classes for the Zoo, all of the classes for your game, and a pdf of a run-through of your game.
 
 Note: You can resubmit your assignment as many times as needed until the deadline. Every time you resubmit, make sure you submit *all* of the files for your assignment every time.
